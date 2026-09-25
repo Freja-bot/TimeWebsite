@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #introText {
+                text-align: center;
+                margin: 0;
+            }
+            h3{
+                color: red;
+            }
+            .handInfoBox{
+                text-align: left;
+                border: 1px solid black;
+                box-shadow: 2px 5px;
+                margin: 10px 5px;
+                padding: 5px;
+            }
+    </style>
+    <title>LifeTime</title>
+</head>
+<body>
+    <div id="introText">
+        <h2>Welcome to the scp-1032 Dashboard!</h2><br>
+        <p>As you may know, scp-1032's hands are always on the move. Given that updating, revising, and reviewing said revisions, to the database file all time has become a major burden for the accociated research team. For that reason this app has been put at your disposel, to better monitor and prepare for scp-1032 midnight events.</p><br>
+        <p>As of today scp-1032 has never predicted wrong, and no method of preventing a midnight event has worked so far. Our efforts has therefore shiftet to preparing for the inevertable.</p><br>
+        <p>(In case you have not alteady been briefed on scp-1032, please read the 1032 entry in the foundation database at the <a href="https://scp-wiki.wikidot.com/scp-1032" target="_blank">scp-1032 entry</a>)</p><br>
+        <p>We thank <strong>MrAesthetics</strong> for their dedicated work to document scp-1032, and also <strong>Photosynthetic</strong> for their revisions.</p>
+    </div>
+    <div id="scp-1032-hands"></div>
+    <p>This website is based on “SCP-1032” by the author “MrAesthetics” and rewritten by “Photosynthetic”: <a href="https://scp-wiki.wikidot.com/scp-1032" target="_blank">https://scp-wiki.wikidot.com/scp-1032</a></p>
+    <script>
+        const handData = [
+            {
+                title: "Scp-1032-01",
+                date: "N/A",
+                text: 'N/A',
+            },
+            {
+                title: "Scp-1032-02",
+                date: "N/A",
+                text: "The worst thing that will ever happen to anybody."
+            },
+            {
+                title: "Scp-1032-03",
+                date: new Date("Apr 19 2028 12:49:41").getTime(),
+                text: 'My Safe classification'
+            },
+            {
+                title: "Scp-1032-04",
+                date: "[DATA EXPUNGED]",
+                text: "The universe"
+            },
+            {
+                title: "Scp-1032-05",
+                date: new Date().getTime() + 5000000,
+                text: "A failed infomercial."
+            },
+            {
+                title: "Scp-1032-06",
+                date: new Date("May 16 2073 09:23:34").getTime(),
+                text: "Freedom of the Press"
+            },
+            {
+                title: "Scp-1032-07",
+                date: new Date("Mar 22 2052 05:08:09").getTime(),
+                text: "Humor"
+            },
+            {
+                title: "Scp-1032-09",
+                date: "[DATA EXPUNGED]",
+                text: "Hostilities between the nations of Africa"
+            }, 
+            {
+                title: "Scp-1032-10",
+                date: new Date("Oct 14 2029 22:38:12").getTime(),
+                text: "Jason W. Tailor Jr.'s sister's daughter"
+            }, 
+            {
+                title: "Scp-1032-11",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "President ████████'s term in office"
+            },
+            {
+                title: "Scp-1032-12",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "████████ bøfhus"
+            },
+            {
+                title: "Scp-1032-13",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "██ inaccuracies"
+            },
+            {
+                title: "Scp-1032-14",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "Wikidot"
+            }, {
+                title: "Scp-1032-15",
+                date: new Date("Apr 9 2690 15:41:58").getTime(),
+                text: "Effective Containment"
+            },
+            {
+                title: "Scp-1032-16",
+                date: new Date("Oct 13 2026 20:39:28").getTime(),
+                text: "The Hanged King's Tragedy"
+            },
+            {
+                title: "Scp-1032-17",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "Scp-343"
+            }, 
+            {},
+            {},
+            {
+                title: "Scp-1032-20",
+                date: new Date("Sep 28 2026").getTime(),
+                text: "International space station"
+            }, 
+            {
+                title: "Scp-1032-21",
+                date: "[DATA EXPUNGED]",
+                text: "The SCP Foundation"
+            },
+            {
+                title: "Scp-1032-22",
+                date: new Date("Jul 28 2032 03:28:32").getTime(),
+                text: "Concern for public health"
+            }, 
+            {
+                title: "Scp-1032-23",
+                date: "N/A",
+                text: "Anomalous pathogenic outbreak"
+            },
+            {
+                title: "Scp-1032-24",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "Space-time destabilization"
+            }, 
+            {
+                title: "Scp-1032-25",
+                date: "[DATA EXPUNGED]",
+                text: "Let there be Chaos"
+            }, 
+            {
+                title: "Scp-1032-26",
+                date: "██ m ██ d ██ h ██ m ██ s",
+                text: "War in ████"
+            }
+        ];
+        alert("WARNING: THE FOUNDATION DATABASE IS\nCLASSIFIED\nUNAUTHORIZED PERSONEL WILL BE TRACKED, LOCATED AND DETAINED");
+        document.addEventListener("DOMContentLoaded", initApp);
+        const scpHand = document.getElementById("scp-1032-hands");
+
+        function initApp(){
+            updateHands();           
+            window.setInterval(updateHands, 1000);  
+        }    
+        
+        function updateHands(){
+            const now = new Date().getTime();
+
+            handInfoBoxes = handData.map( hand => {
+                const box = document.createElement("div");
+                box.classList.add("handInfoBox");
+
+                const title = document.createElement("h3");
+                title.textContent = hand.title;
+                box.appendChild(title);
+
+                const description = document.createElement("p");
+                if(typeof hand.date === "string"){
+                    description.textContent = hand.date + ' until "' + hand.text + '" ends';
+                }else{
+                const duration = hand.date - now;
+                description.textContent = Math.floor(duration / (1000 * 60 * 60 * 24 * 12 )) + " m " + Math.floor(duration % (1000 * 60 * 60 * 24 * 12) / (1000 * 60 * 60 * 24)) + " d " + Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + " h " + Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60)) + " m " + Math.floor((duration % (1000 * 60)) / 1000) + ' s until "' + hand.text + '" ends';
+                }
+                box.appendChild(description);
+                return box;
+            });
+            while (scpHand.firstChild) {
+                scpHand.removeChild(scpHand.firstChild);
+            }
+            handInfoBoxes.forEach(hand => {
+                scpHand.appendChild(hand);
+            });
+        }
+    </script>
+</body>
+</html>
