@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            #introText {
+            h2{
+                background-color: #333;
+                color: white;
+                border-radius: 5%;
+                padding: 10px;
                 text-align: center;
+            }
+            body{
+                margin: 0
+            }
+            footer{
+                padding: 8px;
+                background-color: #333;
+                color: white
+            }
+            footer a{
+                color:red;
+            }
+            main{
+                margin: 8px;
+                padding: 8px;
+            }
+            #introText {
                 margin: 0;
             }
             h3{
@@ -22,15 +43,23 @@
     <title>LifeTime</title>
 </head>
 <body>
+    <main>
     <div id="introText">
-        <h2>Welcome to the scp-1032 Dashboard!</h2><br>
-        <p>As you may know, scp-1032's hands are always on the move. Given that updating, revising, and reviewing said revisions, to the database file all time has become a major burden for the accociated research team. For that reason this app has been put at your disposel, to better monitor and prepare for scp-1032 midnight events.</p><br>
-        <p>As of today scp-1032 has never predicted wrong, and no method of preventing a midnight event has worked so far. Our efforts has therefore shiftet to preparing for the inevertable.</p><br>
+        <h2>Welcome to the scp-1032 Dashboard!</h2>
+
+        <p class="handInfoBox">The content presented in this dashboard, requires a clerance level of 3 or above. Anyone visiting with a clerance level lower will be repremanted and administered class A amnestics.</p>
+        
+        <p>As you may know, scp-1032's hands are always on the move. Given that updating, revising, and reviewing said revisions, to the database file all time has become a major burden for the accociated research team. For that reason this app has been put at your disposel, to better monitor and prepare for scp-1032 midnight events.</p>
+        <p>As of today scp-1032 has never predicted wrong, and no method of preventing a midnight event has worked so far. Our efforts has therefore shiftet to preparing for the inevertable.</p>
         <p>(In case you have not alteady been briefed on scp-1032, please read the 1032 entry in the foundation database at the <a href="https://scp-wiki.wikidot.com/scp-1032" target="_blank">scp-1032 entry</a>)</p><br>
         <p>We thank <strong>MrAesthetics</strong> for their dedicated work to document scp-1032, and also <strong>Photosynthetic</strong> for their revisions.</p>
-    </div>
-    <div id="scp-1032-hands"></div>
-    <p>This website is based on “SCP-1032” by the author “MrAesthetics” and rewritten by “Photosynthetic”: <a href="https://scp-wiki.wikidot.com/scp-1032" target="_blank">https://scp-wiki.wikidot.com/scp-1032</a></p>
+        </div>
+        <div id="scp-1032-hands"></div>
+    </main>
+    <footer>
+        <p>This website uses content from “SCP-1032” by the author “MrAesthetics” and rewritten by “Photosynthetic”: <a href="https://scp-wiki.wikidot.com/scp-1032" target="_blank">https://scp-wiki.wikidot.com/scp-1032</a></p>
+        <p>This project is licensed under the <strong>Creative Commons Attribution-ShareAlike 3.0</strong> license. View the full license here: <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+    </footer>
     <script>
         const handData = [
             {
